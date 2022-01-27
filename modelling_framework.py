@@ -57,15 +57,6 @@ class CovidModel(Model):
                     agent.infection_time.append(self.schedule.time)
                 
         self.schedule.step()
-        
-# =============================================================================
-#     def testing(self):
-#         for agent in self.schedule.agents:
-#             if agent.infection == True:
-#                 random_number = self.random.uniform(0, 1)
-#                 if random_number > 0.15:
-#                     agent.tested = True
-# =============================================================================
 
 #-------------------------------------------------------------
 class CovidAgent(Agent):
